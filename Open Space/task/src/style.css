@@ -35,33 +35,52 @@ body {
 }
 
 .control-panel {
-    background-color: silver;
-    width: 30vw;
-    height: 25vh;
+    background-image: repeating-linear-gradient(45deg, transparent,
+        transparent 15px, rgba(0,0,0,.9) 15px, rgba(0,0,0,.9) 30px);
+    background-color: yellow;
+    width: 32vw;
+    height: 28vh;
     position: absolute;
     display: flex;
+    align-content: center;
+    justify-content: center;
     bottom: 0;
     left: 50%;
     align-self: flex-start;
+}
+
+.control-panel__inner {
+    background-color: #2e2e2e;
+    width: 30vw;
+    height: 25vh;
+    margin-top: 3%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 }
 
 #password {
+    background-color: #2e2e2e;
+    border: 2px yellow solid;
+    border-radius: 4px;
+    color: white;
     position: relative;
     right: 10%;
-    top: 2%
+    top: 3%
 }
 
 #pwd-button {
+    background-color: yellow;
+    border: 2px yellow solid;
+    border-radius: 4px;
     position: relative;
-    top: -14%;
+    top: -12%;
     right: -30%;
 }
 
 .check-buttons {
-    background-color: #66cc66;
+    /*background-color: #66cc66;*/
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -70,7 +89,7 @@ body {
 }
 
 .levers {
-    background-color: #a2b7f9;
+    /*background-color: #a2b7f9;*/
     height: 40%;
     width: 80%;
     display: flex;
@@ -80,7 +99,7 @@ body {
 }
 
 .levers input {
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     height: 3em;
     width: 4em;
     position: relative;
@@ -88,7 +107,10 @@ body {
 }
 
 #launch {
-    background-color: coral;
+    background-color: #cd0101;
+    border: 2px white solid;
+    color: white;
+    border-radius: 50%;
     width: 20%;
     position: relative;
     top: -5%;
