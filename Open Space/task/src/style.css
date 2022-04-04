@@ -7,17 +7,15 @@ body {
 .space {
     background-image: url("space.png");
     width: 80vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: flex-end;
 }
 
 .planet-area {
-    /*background-color: lightskyblue;*/
     height: 70vh;
     width: auto;
     display: flex;
-    /*align-items: flex-end;*/
 }
 
 .planet {
@@ -34,4 +32,64 @@ body {
     bottom: -12%;
     overflow: hidden;
     transform: rotate(30deg);
+}
+
+.control-panel {
+    background-color: silver;
+    width: 30vw;
+    height: 25vh;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50%;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#password {
+    position: relative;
+    right: 10%;
+    top: 2%
+}
+
+#pwd-button {
+    position: relative;
+    top: -14%;
+    right: -30%;
+}
+
+.check-buttons {
+    background-color: #66cc66;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -10%;
+}
+
+.levers {
+    background-color: #a2b7f9;
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -8%;
+}
+
+.levers input {
+    transform: rotate(90deg);
+    height: 3em;
+    width: 4em;
+    position: relative;
+    top: 15%;
+}
+
+#launch {
+    background-color: coral;
+    width: 20%;
+    position: relative;
+    top: -5%;
 }
