@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space {
+    background-image: url("space.png");
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.planet-area {
+    /*background-color: lightskyblue;*/
+    height: 70vh;
+    width: auto;
+    display: flex;
+    /*align-items: flex-end;*/
+}
+
+.planet {
+    height: auto;
+    width: 60vh;
+    z-index: 1;
+}
+
+.rocket {
+    height: 30%;
+    width: 20%;
+    position: relative;
+    left: -30%;
+    bottom: -12%;
+    overflow: hidden;
+    transform: rotate(30deg);
+}
