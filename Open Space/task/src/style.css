@@ -29,9 +29,10 @@ body {
     width: 20%;
     position: relative;
     left: -30%;
-    bottom: -12%;
+    bottom: -20%;
     overflow: hidden;
     transform: rotate(30deg);
+    /*transform: translate(50px, -170px);*/
 }
 
 .control-panel {
@@ -107,11 +108,26 @@ body {
 }
 
 #launch {
-    background-color: #cd0101;
+    background-color: rgba(205, 0, 0, 0.4);
     border: 2px white solid;
     color: white;
     border-radius: 50%;
     width: 20%;
     position: relative;
     top: -5%;
+}
+
+@keyframes launch {
+    0% {
+        left: -30%;
+        bottom: -20%;
+    }
+    100% {
+        left: 20%;
+        bottom: 50%;
+    }
+}
+
+#start {
+    animation: launch 3s;
 }
